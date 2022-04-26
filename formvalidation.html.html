@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5a90f72f86.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" name="form" onsubmit=" return getValue()">
+        <!-- name--- -->
+        <label for="fname" name="fname">enter your name :</label>
+        <input type="text" id="fname" value="sittu"><br><br>
+        <!-- email---- -->
+        <label for="emailname">enter your email :</label>
+        <input type="text" id="emailname" name="email"><br><br>
+        <!-- passward----- -->
+        <label for="pass">enter your passward :</label>
+        <input type="password" id="pass" name="passward"><br><br>
+        <!-- phone number---- -->
+        <label for="phone">enter your phone no :</label>
+        <input type="text" id="phone" name="mobile"><br><br>
+        <!-- checkboxes---- -->
+        <label for="checkbox1">orange</label>
+        <input type="checkbox" id="orange" name="orange"><br><br>
+        <label for="checkbox2">banana</label>
+        <input type="checkbox" id="banana" name="banana"><br><br>
+        <label for="checkbox3">guava</label>
+        <input type="checkbox" id="guava" name="guava"><br><br>
+        <label for="checkbox4">graps</label>
+        <input type="checkbox" id="graps" name="graps"><br><br>
+        <label for="checkbox5">apple</label>
+        <input type="checkbox" id="apple" name="apple"><br><br>
+        <label for="checkbox6">chiku</label>
+        <input type="checkbox" id="chiku" name="chiku"><br><br>
+        <div>
+            <label for="phones"></i><i class="fa-solid fa-camera-rotate" id="camera"></i> </label>
+            <input type="file" name="file" id="phones" onchange="fileSelect(event)" class="inputField"
+                style="display: none;" />
+        </div>
+        <div id="edit"></div>
+        <button>remove</button>
+        <!-- button--- -->
+        <button type="submit">submit</button>
+    </form>
+
+
+    <script>
+       
+        
+        function getValue() {
+            name = document.forms["form"]["fname"].value;
+            email = document.forms["form"]["email"].value;
+            passward = document.forms["form"]["passward"].value;
+            mobile = document.forms["form"]["mobile"].value;
+            // checkbox = document.forms["form"]["orange"]
+            file = document.forms["form"]["file"].value;
+            console.log(name, email, passward, mobile, file)
+
+
+            if(checkbox.value==checked){
+             alert("checked")
+            }
+
+            // for name validation---
+            if (!name) {
+                alert('please enter your name')
+
+            }
+            // for email validataion-----
+            let reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            if (email.match(reg)) {
+                // alert('good')
+            }
+            else {
+                alert('you are wrong')
+
+            }
+
+
+            // for passward validation----
+            if (passward.replace(/[^A-Z]/g, '').length > 1 && passward.length < 9 && passward.replace(/[^a-z]/g, '').length > 1) {
+                // alert('strong passward')
+            }
+            else {
+                alert('passward must have less than 8 charector and one upper case')
+
+            }
+
+            //    phone number validation----
+            if (`${mobile}`.length === 10) {
+                // alert("number is good")
+            }
+            else {
+                alert('worng number')
+            }
+
+
+            // checkboxex validations---
+
+            var array = []
+            var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
+            for (var i = 0; i < checkboxes.length; i++) {
+                array.push(checkboxes[i].value)
+            }
+            console.log("checkboxes length =" + " " + array.length)
+            if (array.length == 4) {
+
+            } else {
+                alert('Atlist four boxes must be selected')
+            }
+
+            // file updation----name="Att_AttributeID"
+
+            if (file !== "") {
+                // alert('file complete')
+                document.getElementById('edit').innerHTML = '<h3>FILES UPLOADED</h3>';
+
+            } else {
+                alert('please upload a file')
+            }
+
+
+
+            return false;
+        }
+
+
+    </script>
+</body>
+
+</html>

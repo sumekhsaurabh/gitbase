@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background-color: black;
+    }
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(243 137 1);
+    }
+
+    .box a {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      color: rgb(252 236 255);
+      line-height: 40px;
+      position: static;
+    }
+
+    .audio {
+      margin: 0px 0px 0px 100px;
+    }
+
+    .audioheading {
+      font-size: 25px;
+    }
+
+    .audioheading {
+      color: #d2025c;
+    }
+
+    .navbar {
+      background-color: #f6d3d3;
+    }
+
+    .nav-link {
+      color: #5873f8;
+    }
+  </style>
+</head>
+
+<body style="background-color: #a1eded;;">
+  <div>
+    <!-- navbar--- -->
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" style="font-size: 22px; ;">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" href="#">service</a>
+            <a class="nav-link active" href="table.html">about us</a>
+            <a class="nav-link active" href="form.html">contact us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- services---- -->
+    <section>
+      <div class="heading"></div>
+      <div class="box" style="background-image: url('newtech.jpg'); background-size: 100% 100%;">
+        <h1>Our clients</h1>
+        <a href="http://facebook.com"> <b>facebook</b></a><a href="http://whatsapp.com"><b>WhatsApp</b></a><a
+          href="http://intagram.com"><b>instagram</b></a><a href="http://zomato.com"><b>zomato</b></a><a
+          href="http://rapido.com"><b>Rapido</b></a><a href="http://chatApp.com"><b>chatApp</b></a>
+      </div>
+      <p style="font-size: 25px; color: #d2025c; margin: 20px;">we gave many service to our clients, thats are given
+        below, that
+        services may be
+        different for different countries</p>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div>
+              <ol>
+                <li style="font-size: 18px">technical support</li>
+                <ol>
+                  <li>window support</li>
+                  <li>server releated essue</li>
+                  <li>API integration related essue</li>
+                </ol>
+                <li style="font-size: 18px"><span>calling support <span class="badge bg-danger">Arriving
+                      soon</span></span></li>
+                <li style="font-size: 18px">backend support</li>
+                <ol style="list-style-type: square;">
+                  <li>java</li>
+                  <li>python</li>
+                  <li>C++</li>
+                  <li>Core Java</li>
+                </ol>
+                <li style="font-size: 18px">frontend support</li>
+                <ol style="list-style-type: upper-roman;">
+                  <li>web development</li>
+                  <li>app development</li>
+                  <li>web design</li>
+                </ol>
+                <li style="font-size: 18px">web testing <span class="badge bg-danger">New</span></li>
+              </ol>
+            </div>
+          </div>
+          <!-- audio video section -->
+          <div class="col">
+            <!-- video section -->
+            <video style="border-radius: 20px;" width="500" height="310" controls>
+              <source src="WhatsApp.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+            <a href="WhatsApp.mp4" download>
+              <img src="download.png" alt="download it" width="15" height="15"><span>Download it</span>
+            </a>
+            <!-- audio section -->
+            <p class="audioheading"> <b>our motivator</b></p>
+            <audio controls class="audio">
+              <source src="Audio.mpeg" type="audio/ogg">
+              <source src="horse.mp3" type="audio/mpeg">
+            </audio>
+            <a href="Audio.mpeg" download style="margin: 0px 0px 5px 0px;">
+              <img src="download.png" alt="download it" width="15" height="15" style="margin-bottom: 5px;"/><span>Download it</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- iframe----- -->
+    </iframe>
+    <iframe frameborder="1" width="100%" height="345"
+      src="https://sumekhsaurabh97.github.io/sumekhsaurabh97library.github.io/">></iframe>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
