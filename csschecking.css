@@ -1,0 +1,13 @@
+/* .container {
+    width: 350px;
+    height: 350px;
+    border: 8px solid red;
+    background-color: black;
+} */
+
+.newclass{
+    color: rgb(0, 255, 110) !important
+}
+.newclass{
+    color: rgb(255, 111, 0) !important
+}
